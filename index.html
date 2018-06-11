@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shape Calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+.footer {
+    position:absolute;
+    width:100%;
+    height: auto;
+    bottom: 20px;
+}
+</style>
+</head>
+<body>
+<div class="container" style="background-image: url(images/header_bg.gif); background-size: 100% 100%;background-repeat: none">
+	<dir class="row">
+		<h3>Shape Calculator</h3>
+	</dir>
+</div>
+<br>
+<div class="container">    
+	<div class="row">
+	    <div class="col-sm-6" align="justify">
+	       <h3>Welcome to Shape Calculator</h3>
+	       <p><b>Shape Calculator is an interactive web application. To the right you will
+	          find the 3 step application. Follow the instructions in each step.
+	          Clicking cancel will take you back to step 1. Enjoy!
+	          </b>
+	        </p>
+	        <p>A small river named Duden flows by their place and supplies it with the
+	           necessary regelialia. It is a paradisematic country, in which roasted parts of
+	           sentences fly into your mouth.
+	        </p>
+	        <p>Even the all-powerful Pointing has no control about the blind texts it is an
+	           almost unorthographic life One day however a small line of blind text by the
+	           name of Lorem Ipsum decided to leave for the far World of Grammar. The
+	           Big Oxmox advised her not to do so, because there were thousands of bad
+	           Commas.
+	         </p>
+	    </div>
+	    <div class="well col-sm-4" style="height: 300px; background-color: white;"> 
+	        <div class=" setp1">
+	       <h4>Step 1: Select your shape</h4>
+	       <p >Please select the shape that you would like to calculate the area of and press the button "Go to step 2"</p>
+	          <form id="select-shape" >
+	           <input type="radio"  name="shape" value="Rectangle" checked> Rectangle<br>
+	           <input type="radio"  name="shape"  value="Circle"> Circle<br>
+	           <input type="radio"  name="shape"  value="Square"> Square<br>
+	           <input type="radio"  name="shape"  value="Ellipse"> Ellipse <br><br>
+	          <div class="footer">
+	          	<button type="submit" class="btn btn-default"  >Go to step 2</button> or <a class="cancel">Cancel</a>  
+	          </div> 
+	         </form>
+	      </div>
+	       	<div class=" setp2" style="display: none;">
+	       	 	<h4>Step 2: Insert your values</h4>
+	       		<p >You have selected a <span class="shape_name"></span>, please input the required variables.</p>
+	       		<form id="submit-value" >
+	          		<div class="required-input"></div>
+	          	<div class="footer">
+	         	 <button type="submit" class="btn btn-default" >Go to step 3</button> or <a class="cancel">Cancel</a> 
+	            </div>
+	         	</form>               
+	        </div>
+	        <div class=" setp3" style="display: none;">
+	       		<h4>Step 3: Your results</h4>
+	       		<p>You have calculated the area of a <span class="shape_name"></span> with a <span class="result_msg"></span>. Below is your result:</p><br>
+	       		<center><h4 class="result" ></h4></center>
+	         	<div class="footer">
+	         		<button type="button" class="btn btn-default" id="start-over" >Start over</button>    
+	         	</div>  
+	      </div>   
+	    </div>
+    <div class="col-sm-2">
+   	  <img src="https://placehold.it/150x80?text=120 x 240 Ad" class="img-responsive" style="width:100%; height: 100%" alt="120 x 240 Ad">
+    </div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="area_calculator.js"></script>
+</html>
